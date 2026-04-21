@@ -8,5 +8,9 @@ func FizzBuzzHandler(value int) string {
 		return "Fizz"
 	}
 
+	if value%5 == 0 {
+		return "Buzz"
+	}
+
 	return strconv.Itoa(value)
 }
