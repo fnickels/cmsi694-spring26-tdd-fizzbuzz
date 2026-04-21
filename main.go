@@ -15,6 +15,7 @@ func main() {
 	}
 	fmt.Println()
 
+	// edge cases
 	fmt.Println(FizzBuzzHandler(-1))
 	fmt.Println(FizzBuzzHandler(0))
 	fmt.Println(FizzBuzzHandler(101))
