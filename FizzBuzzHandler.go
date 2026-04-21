@@ -8,18 +8,10 @@ func FizzBuzzHandler(value int) string {
 	case 0:
 		return "FizzBuzz"
 
-	case 3:
-		fallthrough
-	case 6:
-		fallthrough
-	case 9:
-		fallthrough
-	case 12:
+	case 3, 6, 9, 12:
 		return "Fizz"
 
-	case 5:
-		fallthrough
-	case 10:
+	case 5, 10:
 		return "Buzz"
 	}
 
