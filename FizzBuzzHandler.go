@@ -4,6 +4,10 @@ import "strconv"
 
 func FizzBuzzHandler(value int) string {
 
+	if value <= 0 || value > 100 {
+		panic(1)
+	}
+
 	switch value % 15 {
 	case 0:
 		return "FizzBuzz"
