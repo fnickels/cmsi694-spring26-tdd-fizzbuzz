@@ -4,15 +4,22 @@ import "strconv"
 
 func FizzBuzzHandler(value int) string {
 
-	if value%15 == 0 {
+	switch value % 15 {
+	case 0:
 		return "FizzBuzz"
-	}
 
-	if value%3 == 0 {
+	case 3:
+		fallthrough
+	case 6:
+		fallthrough
+	case 9:
+		fallthrough
+	case 12:
 		return "Fizz"
-	}
 
-	if value%5 == 0 {
+	case 5:
+		fallthrough
+	case 10:
 		return "Buzz"
 	}
 
