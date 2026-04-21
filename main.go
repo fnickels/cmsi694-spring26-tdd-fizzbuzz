@@ -14,4 +14,8 @@ func main() {
 		fmt.Print(FizzBuzzHandler(i))
 	}
 	fmt.Println()
+
+	fmt.Println(FizzBuzzHandler(-1))
+	fmt.Println(FizzBuzzHandler(0))
+	fmt.Println(FizzBuzzHandler(101))
 }
