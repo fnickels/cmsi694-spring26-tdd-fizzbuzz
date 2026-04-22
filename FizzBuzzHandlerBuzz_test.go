@@ -2,16 +2,14 @@ package main
 
 import "testing"
 
-func TestFizzBuzzHandlerFunctionBasics(t *testing.T) {
+func TestFizzBuzzHandlerFunctionBuzz(t *testing.T) {
 	testCases := []struct {
 		name     string
 		input    int
 		expected string
 	}{
-		//{name: "zero", input: 0, expected: "0"},
-		{name: "positive", input: 41, expected: "41"},
-		//{name: "negative", input: -17, expected: "-17"},
-		//{name: "large", input: 1000001, expected: "1000001"},
+		{name: "four", input: 4, expected: "4"},
+		{name: "five", input: 5, expected: "Buzz"},
 	}
 
 	for _, tc := range testCases {
